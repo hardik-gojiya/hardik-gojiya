@@ -8,11 +8,11 @@ import {
   faInstagram,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import myImage from "../assets/my-image.png";
 
 function Home() {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-10 bg-gray-100 min-h-screen">
-      
       <div className="text-center md:text-left space-y-4 md:w-1/2">
         <h1 className="text-4xl font-bold text-gray-800">Hi,</h1>
         <h1 className="text-4xl font-bold text-indigo-600">
@@ -22,14 +22,13 @@ function Home() {
 
         <a
           title="Resume Download"
-          href="my-image.png"
+          href={myImage}
           download="Hardik's resume"
           className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
         >
           Resume <FontAwesomeIcon icon={faDownload} />
         </a>
 
-        
         <div className="flex justify-center md:justify-start gap-6 pt-4 text-indigo-600">
           <a
             href="https://www.linkedin.com/in/hardik-gojiya-80619a2bb/"
@@ -68,7 +67,7 @@ function Home() {
 
       <div className="mb-6 md:mb-0 md:w-1/2 flex justify-center">
         <img
-          src="/assets/my-image.png"
+          src={myImage}
           alt="Profile Picture"
           className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-indigo-500"
         />
