@@ -20,14 +20,14 @@ function Home() {
         </h1>
         <h2 className="text-2xl text-gray-700">As a Web Developer</h2>
 
-        <a
+        {/* <a
           title="Resume Download"
-          href={myImage}
+          href="/"
           download="Hardik's resume"
           className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
         >
           Resume <FontAwesomeIcon icon={faDownload} />
-        </a>
+        </a> */}
 
         <div className="flex justify-center md:justify-start gap-6 pt-4 text-indigo-600">
           <a
