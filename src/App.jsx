@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="flex flex-col md:flex-row justify-between items-center p-4 bg-white shadow-md sticky top-0 z-10">
+      <header className="flex flex-col md:flex-row 2xl:px-20 justify-between items-center p-4 bg-white shadow-md sticky top-0 z-10">
         <div className="text-2xl font-bold text-indigo-600">
           <a href="/">Hardik Gojiya</a>
         </div>

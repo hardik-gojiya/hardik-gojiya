@@ -8,6 +8,7 @@ import {
   faInstagram,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import myImage from "../assets/my-image.png";
 
 function Home() {
   return (
@@ -18,10 +19,11 @@ function Home() {
           I'm Hardik Gojiya
         </h1>
         <h2 className="text-2xl text-gray-700">MERN Stack Developer</h2>
+        
 
         <a
           title="Resume Download"
-          href="resume1.png"
+          href="/"
           download="Hardik's resume"
           className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
         >
@@ -35,11 +37,7 @@ function Home() {
             title="LinkedIn"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              className="text-blue-600"
-            />
+            <FontAwesomeIcon icon={faLinkedin} size="2x" className="text-blue-600" />
           </a>
           <a
             href="https://github.com/hardik-gojiya"
@@ -55,11 +53,7 @@ function Home() {
             title="Instagram"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="2x"
-              className="text-red-600"
-            />
+            <FontAwesomeIcon icon={faInstagram} size="2x" className="text-red-600" />
           </a>
           <a
             href="https://t.me/hartahir/telegram"
@@ -74,7 +68,7 @@ function Home() {
 
       <div className="mb-6 md:mb-0 md:w-1/2 flex justify-center">
         <img
-          src="my-image.png"
+          src={myImage}
           alt="Profile Picture"
           className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-indigo-500"
         />

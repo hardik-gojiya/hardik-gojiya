@@ -33,7 +33,7 @@ function Contact() {
   };
 
   return (
-    <div className="w-full px-6 py-10 bg-white text-center">
+    <div className="w-full px-6 py-10 bg-gray-100 text-center">
       <h1 className="text-3xl font-bold text-indigo-600 mb-2">Contact Me</h1>
       <hr className="w-24 mx-auto border-indigo-400 mb-6" />
 
