@@ -48,6 +48,27 @@ function Skills() {
       </h1>
       <hr className="w-24 mx-auto border-indigo-400 mb-4" />
       <ProjectTemp />
+
+      <h2 className="text-3xl font-bold text-indigo-600 mb-4">GitHub Streak</h2>
+      <hr className="w-24 mx-auto border-indigo-400 mb-8" />
+
+      <div className="flex justify-center gap-8 items-center flex-wrap mb-8">
+        <div className="flex justify-center items-center max-w-md">
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com?user=hardik-gojiya&mode=weekly&exclude_days=Sun%2CSat&hide_current_streak=true"
+            alt="GitHub Streak"
+            className="w-full max-w-md border-20 rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div className="flex justify-center items-center max-w-2xl">
+          <img
+            src="https://ghchart.rshah.org/hardik-gojiya"
+            alt="GitHub Contributions"
+            className="w-full max-w-2xl border-2 p-10  rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
     </div>
   );
 }
