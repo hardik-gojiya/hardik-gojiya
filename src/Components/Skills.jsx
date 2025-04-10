@@ -55,7 +55,7 @@ function Skills() {
       <div className="flex justify-center gap-8 items-center flex-wrap mb-8">
         <div className="flex justify-center items-center max-w-md">
           <img
-            src="https://github-readme-streak-stats.herokuapp.com?user=hardik-gojiya&mode=weekly&exclude_days=Sun%2CSat&hide_current_streak=true"
+            src="https://github-readme-streak-stats.herokuapp.com?user=hardik-gojiya&exclude_days=Sun%2CSat&hide_current_streak=true"
             alt="GitHub Streak"
             className="w-full max-w-md border-20 rounded-lg shadow-lg"
           />
