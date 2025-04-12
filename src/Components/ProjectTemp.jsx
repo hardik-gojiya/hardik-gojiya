@@ -24,6 +24,12 @@ function ProjectTemp() {
       image: "noteapp-mern.png",
       github: "https://github.com/hardik-gojiya/small-mern-projects",
     },
+    {
+      title: "Backend for Ecommerce platform",
+      description: "backend for ecommerce platform using mern",
+      image: "noteapp-mern.png",
+      github: "https://github.com/hardik-gojiya/ECommerce",
+    },
   ];
 
   return (
