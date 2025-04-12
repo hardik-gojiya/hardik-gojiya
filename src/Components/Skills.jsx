@@ -14,7 +14,7 @@ import ProjectTemp from "./ProjectTemp";
 
 function Skills() {
   return (
-    <div className="w-full px-6 py-10 bg-gray-100 text-center">
+    <div className="w-full px-6 py-10 bg-gray-100 dark:bg-gray-900 text-center text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <h1 className="text-3xl font-bold text-indigo-600 mb-2" title="Skills">
         Skills
       </h1>
@@ -55,17 +55,17 @@ function Skills() {
       <div className="flex justify-center gap-8 items-center flex-wrap mb-8">
         <div className="flex justify-center items-center max-w-md">
           <img
-            src="https://github-readme-streak-stats.herokuapp.com?user=hardik-gojiya&exclude_days=Sun%2CSat&hide_current_streak=true"
+            src="https://github-readme-streak-stats.herokuapp.com?user=hardik-gojiya&exclude_days=Sun%2CSat&hide_current_streak=true&theme=dark"
             alt="GitHub Streak"
-            className="w-full max-w-md border-20 rounded-lg shadow-lg"
+            className="w-full max-w-md border-2 rounded-lg shadow-lg"
           />
         </div>
 
         <div className="flex justify-center items-center max-w-2xl">
           <img
-            src="https://ghchart.rshah.org/hardik-gojiya"
+            src="https://ghchart.rshah.org/2196f3/hardik-gojiya"
             alt="GitHub Contributions"
-            className="w-full max-w-2xl border-2 p-10  rounded-lg shadow-lg"
+            className="w-full max-w-2xl border-2 p-10 rounded-lg shadow-lg"
           />
         </div>
       </div>
@@ -77,7 +77,7 @@ function Skill({ icon, label, color }) {
   return (
     <div className="flex flex-col items-center" title={label}>
       <FontAwesomeIcon icon={icon} size="3x" className={color} />
-      <span className="mt-2 font-medium text-gray-700">{label}</span>
+      <span className="mt-2 font-medium text-gray-700 dark:text-gray-200">{label}</span>
     </div>
   );
 }

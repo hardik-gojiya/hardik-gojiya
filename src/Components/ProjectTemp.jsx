@@ -33,12 +33,12 @@ function ProjectTemp() {
   ];
 
   return (
-    <div className="w-full px-6 py-12 bg-gray-100 text-center">
+    <div className="w-full px-6 py-12 bg-gray-100 dark:bg-gray-900 text-center transition-colors duration-300">
       <div className="flex flex-wrap justify-center gap-8">
         {projectDetails.map((project, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-2xl p-5 w-full sm:w-[300px] md:w-[340px] border border-indigo-200 hover:border-indigo-400 transition-all duration-300 hover:shadow-2xl"
+            className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-5 w-full sm:w-[300px] md:w-[340px] border border-indigo-200 dark:border-indigo-500 hover:border-indigo-400 transition-all duration-300 hover:shadow-2xl"
           >
             <img
               src={project.image}
@@ -48,7 +48,9 @@ function ProjectTemp() {
             <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 mb-2">
               {project.title}
             </h3>
-            <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              {project.description}
+            </p>
 
             <div className="flex flex-col gap-2 items-center">
               <a
