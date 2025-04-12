@@ -26,13 +26,12 @@ function About() {
             <strong className="text-indigo-600">MERN Stack Developer</strong>{" "}
             with hands-on experience in building scalable web applications using{" "}
             <strong>MongoDB, Express.js, React.js, and Node.js</strong>. I enjoy
-            solving real-world problems with clean code. My
-            expertise lies in authentication systems, RESTful APIs, real-time
-            chat apps, and responsive frontends using{" "}
-            <strong>Tailwind CSS</strong>. I'm continuously learning and
-            growing, ready to contribute to impactful projects.
+            solving real-world problems with clean code. My expertise lies in
+            authentication systems, RESTful APIs, real-time chat apps, and
+            responsive frontends using <strong>Tailwind CSS</strong>. I'm
+            continuously learning and growing, ready to contribute to impactful
+            projects.
           </p>
-
         </div>
       </div>
 
@@ -60,8 +59,10 @@ function About() {
               <td className="px-4 py-2 border border-indigo-200">
                 B.E in Information Technology
               </td>
-              <td className="px-4 py-2 border border-indigo-200">2026</td>
-              <td className="px-4 py-2 border border-indigo-200">9 CGPA</td>
+              <td className="px-4 py-2 border border-indigo-200">
+                Expected in 2026
+              </td>
+              <td className="px-4 py-2 border border-indigo-200">8 CGPA</td>
             </tr>
             <tr className="hover:bg-indigo-50">
               <td className="px-4 py-2 border border-indigo-200">2</td>
