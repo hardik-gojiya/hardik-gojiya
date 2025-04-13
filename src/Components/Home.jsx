@@ -12,23 +12,34 @@ function Home() {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-16 py-10 bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
       <div className="text-center md:text-left space-y-4 md:w-1/2">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100">
-          Hi,
+      <h1 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-white leading-tight">
+          Hello! I'm{" "}
+          <span className="text-indigo-600 dark:text-indigo-400">
+            Hardik Gojiya
+          </span>
         </h1>
-        <h1 className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
-          I'm Hardik Gojiya
-        </h1>
-        <h2 className="text-2xl text-gray-700 dark:text-gray-300">
-          MERN Stack Developer
+
+        <h2 className="text-xl md:text-2xl text-gray-700 dark:text-gray-300">
+          MERN Stack Developer | Final Year IT Student
         </h2>
 
+        <p className="text-md text-gray-600 dark:text-gray-400 max-w-md leading-relaxed">
+          I'm a passionate web developer skilled in MongoDB, Express, React, and Node.js. 
+          As a fresher, I'm actively building real-world projects to sharpen my skills and looking forward to starting my professional journey in the tech world.
+        </p>
+
+        <p className="text-md text-gray-600 dark:text-gray-400 max-w-md leading-relaxed">
+          I'm open to internships or entry-level roles where I can learn, grow, and contribute.
+        </p>
+
         <a
-          title="Resume Download"
+          title="Download Resume"
           href="resume1.png"
-          download="Hardik's resume"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+          download="Hardik_Gojiya_Resume"
+          className="inline-flex items-center gap-2 px-5 py-2.5 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow transition duration-300"
         >
-          Resume <FontAwesomeIcon icon={faDownload} />
+          <FontAwesomeIcon icon={faDownload} />
+          Download Resume
         </a>
 
         <div className="flex justify-center md:justify-start gap-6 pt-4 text-indigo-600 dark:text-indigo-400">

@@ -24,18 +24,23 @@ function About() {
             Hardik Gojiya
           </h2>
           <p className="text-base leading-relaxed text-gray-800 dark:text-gray-200">
-            I’m a passionate{" "}
+            I'm a passionate and self-motivated{" "}
             <strong className="text-indigo-600 dark:text-indigo-400">
               MERN Stack Developer
             </strong>{" "}
-            with hands-on experience in building scalable web applications
-            using{" "}
+            currently pursuing my B.E in Information Technology. As a fresher,
+            I’ve built several full-stack projects that demonstrate my strong
+            foundation in{" "}
             <strong>MongoDB, Express.js, React.js, and Node.js</strong>. I enjoy
-            solving real-world problems with clean code. My expertise lies in
-            authentication systems, RESTful APIs, real-time chat apps, and
-            responsive frontends using{" "}
-            <strong>Tailwind CSS</strong>. I'm continuously learning and
-            growing, ready to contribute to impactful projects.
+            crafting clean, user-friendly interfaces and efficient backend
+            systems.
+          </p>
+          <p className="text-base leading-relaxed text-gray-800 dark:text-gray-200">
+            My projects include real-time chat apps, authentication systems,
+            PDF/image tools, and file converters. I’m also familiar with{" "}
+            <strong>Tailwind CSS</strong>, REST APIs, and working with external
+            APIs. I'm a quick learner, team player, and excited to contribute to
+            real-world software development environments.
           </p>
         </div>
       </div>

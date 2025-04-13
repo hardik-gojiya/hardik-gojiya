@@ -5,6 +5,9 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -26,7 +29,7 @@ function App() {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3,
+      threshold: 0.1,
     };
 
     const observerCallback = (entries) => {
@@ -90,7 +93,11 @@ function App() {
             onClick={() => setDarkMode((prev) => !prev)}
             className="ml-4 px-2 py-1 border border-gray-400 rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700"
           >
-            {darkMode ? "☀️" : "🌙"}
+            {darkMode ? (
+              <FontAwesomeIcon icon={faSun} />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} />
+            )}
           </button>
         </nav>
       </header>
@@ -118,8 +125,8 @@ function App() {
         <div id="Contact" ref={contactRef} className="pt-20">
           <Contact />
         </div>
-        <hr />
       </main>
+      <Footer />
     </div>
   );
 }

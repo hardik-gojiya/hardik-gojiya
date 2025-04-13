@@ -75,9 +75,12 @@ function Skills() {
 
 function Skill({ icon, label, color }) {
   return (
-    <div className="flex flex-col items-center" title={label}>
-      <FontAwesomeIcon icon={icon} size="3x" className={color} />
-      <span className="mt-2 font-medium text-gray-700 dark:text-gray-200">{label}</span>
+    <div
+      className="w-24 h-24 flex flex-col items-center justify-center bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-800 dark:text-white rounded-xl shadow-md border border-gray-200 dark:border-gray-600 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+      title={label}
+    >
+      <FontAwesomeIcon icon={icon} size="2x" className={`${color} mb-2`} />
+      <span className="text-sm font-semibold tracking-wide">{label}</span>
     </div>
   );
 }
