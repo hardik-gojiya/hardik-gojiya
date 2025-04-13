@@ -10,7 +10,7 @@ import {
 
 function Home() {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-10 bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-16 py-10 bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
       <div className="text-center md:text-left space-y-4 md:w-1/2">
         <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100">
           Hi,

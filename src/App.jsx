@@ -97,7 +97,7 @@ function App() {
 
       <main className="p-6">
         {/* Home */}
-        <div id="Home" ref={homeRef} className="pt-20">
+        <div id="Home" ref={homeRef}>
           <Home />
         </div>
         <hr />
