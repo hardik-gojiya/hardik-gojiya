@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import React from "react";
+
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
@@ -7,36 +9,73 @@ import Contact from "./Components/Contact";
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
   const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem("darkMode");
-    return saved === "true";
+    return localStorage.getItem("darkMode") === "true";
   });
 
-  useEffect(() => {
-    const saved = localStorage.getItem("darkMode") === "true";
-    setDarkMode(saved);
-  }, []);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    const sections = [
+      homeRef.current,
+      aboutRef.current,
+      skillsRef.current,
+      contactRef.current,
+    ];
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <div
-      className={`min-h-screen ${
+      className={`min-h-screen scroll-smooth ${
         darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
       }`}
     >
-      <header className="flex flex-col md:flex-row justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10">
+      <header className="flex flex-col md:flex-row 2xl:px-20 justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10">
         <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
           <a href="/">Hardik Gojiya</a>
         </div>
-        <nav className="flex gap-4 items-center mt-2 md:mt-0">
+
+        <nav className="flex gap-4 mt-2 md:mt-0 items-center">
           {["Home", "About", "Skills", "Contact"].map((section) => (
             <a
               key={section}
               href={`#${section}`}
-              onClick={() => setActiveSection(section)}
               className={`font-medium ${
                 activeSection === section
                   ? "text-indigo-600 underline dark:text-indigo-400"
@@ -48,7 +87,7 @@ function App() {
           ))}
 
           <button
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={() => setDarkMode((prev) => !prev)}
             className="ml-4 px-2 py-1 border border-gray-400 rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700"
           >
             {darkMode ? "☀️" : "🌙"}
@@ -57,19 +96,26 @@ function App() {
       </header>
 
       <main className="p-6">
-        <div id="Home">
+        {/* Home */}
+        <div id="Home" ref={homeRef} className="pt-20">
           <Home />
         </div>
         <hr />
-        <div id="About" className="pt-10">
+
+        {/* About */}
+        <div id="About" ref={aboutRef} className="pt-20">
           <About />
         </div>
         <hr />
-        <div id="Skills" className="pt-10">
+
+        {/* Skills */}
+        <div id="Skills" ref={skillsRef} className="pt-20">
           <Skills />
         </div>
         <hr />
-        <div id="Contact" className="pt-10">
+
+        {/* Contact */}
+        <div id="Contact" ref={contactRef} className="pt-20">
           <Contact />
         </div>
         <hr />
