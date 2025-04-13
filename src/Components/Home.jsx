@@ -12,11 +12,15 @@ function Home() {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-10 bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
       <div className="text-center md:text-left space-y-4 md:w-1/2">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100">Hi,</h1>
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100">
+          Hi,
+        </h1>
         <h1 className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
           I'm Hardik Gojiya
         </h1>
-        <h2 className="text-2xl text-gray-700 dark:text-gray-300">MERN Stack Developer</h2>
+        <h2 className="text-2xl text-gray-700 dark:text-gray-300">
+          MERN Stack Developer
+        </h2>
 
         <a
           title="Resume Download"
@@ -46,7 +50,11 @@ function Home() {
             title="Github"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} size="2x" className="text-black dark:text-white" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              className="text-black dark:text-white"
+            />
           </a>
           <a
             href="https://www.instagram.com/hardik_ahir.33/?igsh=eWN3b3lvbjl5cW93"
@@ -66,7 +74,11 @@ function Home() {
             title="Telegram"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTelegram} size="2x" className="dark:text-blue-400" />
+            <FontAwesomeIcon
+              icon={faTelegram}
+              size="2x"
+              className="dark:text-blue-400"
+            />
           </a>
         </div>
       </div>

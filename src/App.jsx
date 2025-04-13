@@ -6,10 +6,19 @@ import Contact from "./Components/Contact";
 
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === "true";
+  });
+
+  useEffect(() => {
+    const saved = localStorage.getItem("darkMode") === "true";
+    setDarkMode(saved);
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
   return (
@@ -38,7 +47,6 @@ function App() {
             </a>
           ))}
 
-          {/* Dark Mode Toggle */}
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="ml-4 px-2 py-1 border border-gray-400 rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700"
