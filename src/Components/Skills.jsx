@@ -65,7 +65,7 @@ function Skills() {
           <img
             src="https://ghchart.rshah.org/2196f3/hardik-gojiya"
             alt="GitHub Contributions"
-            className="w-full max-w-2xl border-2 p-10 rounded-lg shadow-lg"
+            className="w-full max-w-2xl border-2 md:p-7 p-3 rounded-lg shadow-lg"
           />
         </div>
       </div>
