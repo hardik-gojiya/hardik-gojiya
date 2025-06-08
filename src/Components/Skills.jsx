@@ -14,15 +14,15 @@ import ProjectTemp from "./ProjectTemp";
 
 function Skills() {
   return (
-    <div className="w-full px-6 py-10 bg-gray-100 dark:bg-gray-900 text-center text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div className="w-full md:px-6 py-10 bg-gray-100 dark:bg-gray-900 text-center text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <h1 className="text-3xl font-bold text-indigo-600 mb-2" title="Skills">
         Skills
       </h1>
       <hr className="w-24 mx-auto border-indigo-400 mb-6" />
 
       <div className="flex justify-center gap-10 flex-wrap mb-10">
-        <Skill icon={faHtml5} label="HTML5" color="text-red-500" />
-        <Skill icon={faCss3Alt} label="CSS3" color="text-blue-600" />
+        <Skill icon={faHtml5} label="HTML" color="text-red-500" />
+        <Skill icon={faCss3Alt} label="CSS" color="text-blue-600" />
         <Skill icon={faJs} label="JavaScript" color="text-yellow-400" />
         <Skill
           icon={faReact}

@@ -38,7 +38,7 @@ function ProjectTemp() {
   ];
 
   return (
-    <div className="w-full px-6 py-12 bg-gray-100 dark:bg-gray-900 text-center transition-colors duration-300">
+    <div className="w-full md:px-6 px-0 py-12 bg-gray-100 dark:bg-gray-900 text-center transition-colors duration-300">
       <div className="flex flex-wrap justify-center gap-8">
         {projectDetails.map((project, index) => (
           <div
