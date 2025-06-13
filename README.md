@@ -1,2 +1,3 @@
 https://hardik-gojiya-portfolio.netlify.app/
-![alt text](<Screenshot 2025-04-09 115644.png>)
+![image](https://github.com/user-attachments/assets/93932152-ed89-4aea-8080-7f812b9db15c)
+
