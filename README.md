@@ -51,13 +51,4 @@ Here are some of the projects I've worked on:
 
 ---
 
-## 🧠 Currently Learning
-
-- Deployment (Render, Vercel, Netlify)
-- Advanced MongoDB & Mongoose
-- Clean architecture & testing
-- DevOps basics
-
----
-
 Thanks for visiting! If you like my work, don’t forget to ⭐ my repositories!
