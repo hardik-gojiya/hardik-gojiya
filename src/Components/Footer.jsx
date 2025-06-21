@@ -1,4 +1,3 @@
-import React from "react";
 import {
   faGithub,
   faLinkedin,
@@ -12,7 +11,14 @@ function Footer() {
     <footer className="bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-6 px-6 md:px-16 mt-10 transition-colors duration-300">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-center md:text-left">
-          © {new Date().getFullYear()} Hardik Gojiya. All rights reserved.
+          © {new Date().getFullYear()}{" "}
+          <a
+            href="mailto:hardikgojiya143@gmail.com"
+            className="text-blue-500 hover:underline"
+          >
+            Hardik Gojiya
+          </a>
+          . All rights reserved.
         </p>
 
         <div className="flex gap-4 justify-center md:justify-end">

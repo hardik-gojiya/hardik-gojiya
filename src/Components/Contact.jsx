@@ -7,6 +7,7 @@ import {
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function Contact() {
   const form = useRef();
@@ -59,11 +60,20 @@ function Contact() {
           color="text-pink-500"
         />
         <SocialLink
-          href="https://t.me/hartahir/telegram"
+          href="https://t.me/HartAhir"
           icon={faTelegram}
           label="@HardikGojiya_33"
           color="text-blue-400"
         />
+      </div>
+      <div className="mt-6 mb-5 flex justify-center items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+        <FontAwesomeIcon icon={faEnvelope} className="text-indigo-600" />
+        <a
+          href="mailto:hardikgojiya143@gmail.com"
+          className="hover:underline text-indigo-400"
+        >
+          hardikgojiya143@gmail.com
+        </a>
       </div>
 
       <form
