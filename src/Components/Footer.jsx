@@ -12,13 +12,8 @@ function Footer() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-center md:text-left">
           © {new Date().getFullYear()}{" "}
-          <a
-            href="mailto:hardikgojiya143@gmail.com"
-            className="text-blue-500 hover:underline"
-          >
-            Hardik Gojiya
-          </a>
-          . All rights reserved.
+          <a className="text-blue-500 hover:underline">Hardik Gojiya</a>. All
+          rights reserved.
         </p>
 
         <div className="flex gap-4 justify-center md:justify-end">

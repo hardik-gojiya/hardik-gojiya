@@ -37,7 +37,7 @@ function Home() {
 
         <a
           title="Download Resume"
-          href="Hardik gojiya.pdf"
+          href="Copy-of-Hardik-gojiya-resume.pdf"
           download="Hardik_Gojiya_Resume"
           className="inline-flex items-center gap-2 px-5 py-2.5 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow transition duration-300"
         >
@@ -99,7 +99,7 @@ function Home() {
 
       <div className="mb-6 md:mb-0 md:w-1/2 flex justify-center">
         <img
-          src="my-image.png"
+          src="/my-image.png"
           alt="Profile Picture"
           className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-indigo-500"
         />
