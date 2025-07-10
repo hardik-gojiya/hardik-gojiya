@@ -14,6 +14,24 @@ function ProjectTemp() {
       tech: ["React", "Node.js", "MongoDB", "Socket.io", "OTP Auth"],
     },
     {
+      title: "Writly - Blogging Platform",
+      description:
+        "A modern full-featured blogging platform built with MERN stack, featuring real-time comments, rich text editor, like/save system, voice reading, and more.",
+      image: "writly.png",
+      github: "https://github.com/hardik-gojiya/blogging-platform",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "RichTextEditor",
+        "Tailwind CSS",
+        "SpeechSynthesis API",
+      ],
+    },
+
+    {
       title: "Note App",
       description: "Made using MERN Stack for user login and secure notes.",
       image: "noteapp-mern.png",
