@@ -127,32 +127,29 @@ function About() {
       </div>
 
       <div className="w-full md:px-6 py-10 bg-gray-100 dark:bg-gray-900 text-center text-gray-900 dark:text-gray-100 transition-colors duration-300">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-6">
             Internship Experience
           </h2>
-          <hr className="w-24 mx-auto border-indigo-400 mb-8" />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {internships.map((internship, idx) => (
-              <div
-                key={idx}
-                className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-left border border-indigo-200 dark:border-indigo-700 transition-transform hover:scale-[1.02]"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                  {internship.role}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                  {internship.company} | {internship.duration}
-                </p>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-2">
-                  {internship.description.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <hr className="w-24 mx-auto border-indigo-400 mb-6" />
+          {internships.map((internship, idx) => (
+            <div
+              key={idx}
+              className="bg-white dark:bg-gray-800 mb-6 shadow-lg rounded-2xl p-6 text-left border border-indigo-200 dark:border-indigo-700 transition-transform hover:scale-[1.02]"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                {internship.role}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-2">
+                {internship.company} | {internship.duration}
+              </p>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                {internship.description.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
