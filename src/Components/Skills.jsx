@@ -21,8 +21,8 @@ function Skills() {
       <hr className="w-24 mx-auto border-indigo-400 mb-6" />
 
       <div className="flex justify-center gap-10 flex-wrap mb-10">
-        <Skill icon={faHtml5} label="HTML" color="text-red-500" />
-        <Skill icon={faCss3Alt} label="CSS" color="text-blue-600" />
+        {/* <Skill icon={faHtml5} label="HTML" color="text-red-500" /> */}
+        {/* <Skill icon={faCss3Alt} label="CSS" color="text-blue-600" /> */}
         <Skill icon={faJs} label="JavaScript" color="text-yellow-400" />
         <Skill
           icon={faReact}
@@ -39,7 +39,7 @@ function Skills() {
       </h2>
       <hr className="w-20 mx-auto border-indigo-300 mb-6" />
       <div className="flex justify-center gap-10 flex-wrap mb-10">
-        <Skill icon={faPython} label="Python" color="text-yellow-600" />
+        {/* <Skill icon={faPython} label="Python" color="text-yellow-600" /> */}
         <Skill icon={faGitAlt} label="Git" color="text-orange-500" />
       </div>
 

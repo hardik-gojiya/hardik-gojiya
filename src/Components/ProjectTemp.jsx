@@ -11,7 +11,14 @@ function ProjectTemp() {
       image: "chatapp-mern.png",
       github: "https://github.com/hardik-gojiya/chatapp-mern",
       deployurl: "https://chat-in-uanp.onrender.com/",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io", "OTP Auth"],
+      tech: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Socket.io",
+        "OTP Auth",
+        "Tailwind CSS",
+      ],
     },
     {
       title: "Writly - Blogging Platform",
