@@ -8,7 +8,7 @@ function ProjectTemp() {
     {
       title: "Chat App",
       description: "Made using MERN with OTP login and real-time messaging.",
-      image: "chatapp-mern.png",
+      image: "/hardikgojiya/chatapp-mern.png",
       github: "https://github.com/hardik-gojiya/chatapp-mern",
       deployurl: "https://chat-in-uanp.onrender.com/",
       tech: [
@@ -24,7 +24,7 @@ function ProjectTemp() {
       title: "Writly - Blogging Platform",
       description:
         "A modern full-featured blogging platform built with MERN stack, featuring real-time comments, rich text editor, like/save system, voice reading, and more.",
-      image: "writly.png",
+      image: "/hardikgojiya/writly.png",
       github: "https://github.com/hardik-gojiya/blogging-platform",
       tech: [
         "React",
@@ -41,7 +41,7 @@ function ProjectTemp() {
     {
       title: "Note App",
       description: "Made using MERN Stack for user login and secure notes.",
-      image: "noteapp-mern.png",
+      image: "/hardikgojiya/noteapp-mern.png",
       github: "https://github.com/hardik-gojiya/NoteApp-MERN",
       tech: ["Node.js", "React", "Express", "MongoDB", "JWT"],
     },
@@ -49,14 +49,14 @@ function ProjectTemp() {
       title: "Small MERN Projects",
       description:
         "Image Resizer, Pdf Merger, File Converter and talk with apis etc...",
-      image: "noteapp-mern.png",
+      image: "/hardikgojiya/noteapp-mern.png",
       github: "https://github.com/hardik-gojiya/small-mern-projects",
       tech: ["MERN", "PDF-lib", "Sharp", "External APIs"],
     },
     {
       title: "Ecommerce platform",
       description: "ecommerce platform using MERN.",
-      image: "EcommerceProject.png",
+      image: "/hardikgojiya/EcommerceProject.png",
       github: "https://github.com/hardik-gojiya/ECommerce",
       tech: ["Node.js", "Express", "MongoDB", "JWT", "REST API"],
     },
