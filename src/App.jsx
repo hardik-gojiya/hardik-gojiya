@@ -11,8 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
+  const saved = localStorage.getItem("darkMode");
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("darkMode") === "true";
+    return saved !== null ? saved === "true" : true;
   });
 
   const homeRef = useRef(null);
