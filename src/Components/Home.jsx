@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
-  const [showResume, setShowResume] = useState(false);
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-16 py-10 bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
       <div className="text-center md:text-left space-y-4 md:w-1/2">
@@ -45,18 +44,19 @@ function Home() {
           <FontAwesomeIcon icon={faDownload} />
           Resume
         </a>
-        <button
+        <a
+          href={
+            "https://drive.google.com/file/d/1a7bW30J8eck1RFhyGsZziKf7D3L4N9aH/view?usp=sharing"
+          }
+          target="_blank"
           title="See Resume"
-          onClick={() => {
-            setShowResume(!showResume);
-          }}
           className="inline-flex items-center gap-2 mx-5 px-5 py-2.5 
              bg-indigo-600 hover:bg-indigo-700 
              text-white dark:text-white 
              rounded-lg shadow transition duration-300"
         >
           <FontAwesomeIcon icon={faEye} />
-        </button>
+        </a>
 
         <div className="flex justify-center md:justify-start gap-6 pt-4 text-indigo-600 dark:text-indigo-400">
           <a
@@ -117,24 +117,6 @@ function Home() {
           className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-indigo-500"
         />
       </div>
-      {showResume && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 p-2">
-          <div className="bg-white w-full md:w-4/5 h-[90vh] md:h-[80vh] p-4 rounded shadow-lg relative overflow-hidden">
-            <button
-              className="absolute top-2 right-1 text-red-400 text-2xl font-bold z-10"
-              onClick={() => setShowResume(false)}
-            >
-              &times;
-            </button>
-            <iframe
-              src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/hardik-gojiya/hardik-gojiya/main/public/Copy-of-Hardik-gojiya-resume.pdf&embedded=true"
-              className="w-full h-full md:h-[80vh]"
-              style={{ border: "none" }}
-              title="Resume Preview"
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
