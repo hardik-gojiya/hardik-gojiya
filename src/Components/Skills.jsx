@@ -53,13 +53,13 @@ function Skills() {
       <hr className="w-24 mx-auto border-indigo-400 mb-8" />
 
       <div className="flex justify-center gap-8 items-center flex-wrap mb-8">
-        <div className="flex justify-center items-center max-w-md">
+        {/* <div className="flex justify-center items-center max-w-md">
           <img
             src="https://github-readme-streak-stats.herokuapp.com?user=hardik-gojiya&exclude_days=Sun%2CSat&hide_current_streak=true&theme=dark"
             alt="GitHub Streak"
             className="w-full max-w-md border-2 rounded-lg shadow-lg"
           />
-        </div>
+        </div> */}
 
         <div className="flex justify-center items-center max-w-2xl">
           <img

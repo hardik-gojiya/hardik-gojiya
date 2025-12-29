@@ -10,7 +10,7 @@ function ProjectTemp() {
       description: "Made using MERN with OTP login and real-time messaging.",
       image: "chatapp-mern.png",
       github: "https://github.com/hardik-gojiya/chatapp-mern",
-      deployurl: "https://chat-in-uanp.onrender.com/",
+      deployurl: "https://chatapp-mern-ck4w.onrender.com/",
       tech: [
         "React",
         "Node.js",
