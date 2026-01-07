@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   faGithub,
@@ -11,26 +11,33 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function Contact() {
   const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_YOUR_SERVICE_ID,
-        import.meta.env.VITE_YOUR_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_YOUR_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          alert("Message sent successfully!");
-          form.current.reset();
-        },
-        () => {
-          alert("Failed to send message. Please try again.");
-        }
-      );
+    setIsSubmitting(true);
+    try {
+      await emailjs
+        .sendForm(
+          import.meta.env.VITE_YOUR_SERVICE_ID,
+          import.meta.env.VITE_YOUR_TEMPLATE_ID,
+          form.current,
+          import.meta.env.VITE_YOUR_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            alert("Message sent successfully!");
+            form.current.reset();
+          },
+          () => {
+            alert("Failed to send message. Please try again.");
+          }
+        );
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -108,9 +115,10 @@ function Contact() {
         ></textarea>
         <button
           type="submit"
+          disabled={isSubmitting}
           className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
         >
-          Send
+          {isSubmitting ? "Sending.." : "Send"}
         </button>
       </form>
     </div>
