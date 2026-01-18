@@ -106,7 +106,7 @@ function About() {
                 Expected in 2026
               </td>
               <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
-                7.66 CGPA
+                7.80 CGPA
               </td>
             </tr>
             <tr className="hover:bg-blue-50 dark:hover:bg-blue-700">
