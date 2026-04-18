@@ -2,16 +2,16 @@ function About() {
   const internships = [
     {
       company: "Floatbot.ai",
-      role: "Node.js Developer Intern",
+      role: "Backend Developer Intern",
       duration: "Jan 2026 - Present",
-      location: "",
+      location: "Bhavnagar",
       isCurrent: true,
       description: [
         // "Building and maintaining backend services for AI-powered conversational platform",
         // "Developing scalable APIs using Node.js and Express",
         // "Contributing to database optimization and performance improvements",
       ],
-      technologies: ["Node.js", "Express", "REST APIs"],
+      technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL"],
     },
     {
       company: "Zidio Development",

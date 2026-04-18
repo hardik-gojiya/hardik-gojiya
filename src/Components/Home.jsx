@@ -17,7 +17,7 @@ function Home() {
       <div className="text-center md:text-left space-y-6 md:w-1/2 z-10 animate-fade-in-up">
         <h1 className="text-4xl md:text-6xl font-black text-gray-800 dark:text-white leading-tight tracking-tight">
           Hello! I’m <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 line-through decoration-gray-500/50 decoration-2">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 decoration-gray-500/50 decoration-2">
             Hardik Gojiya
           </span>
         </h1>
@@ -27,10 +27,10 @@ function Home() {
         </h2>
 
         <p className="text-md text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed font-light">
-          > I’m a passionate web developer skilled in MongoDB, Express, React, and Node.js. 
+          &gt; I’m a passionate web developer skilled in MongoDB, Express, React, and Node.js. 
           As a fresher, I’m actively building real-world projects to sharpen my skills.
           <br/><br/>
-          > Exploring internships or entry-level roles where I can learn, grow, and ship scalable products.
+          &gt; Exploring internships or entry-level roles where I can learn, grow, and ship scalable products.
         </p>
 
         <div className="flex justify-center md:justify-start gap-4 pt-4">
