@@ -29,9 +29,10 @@ function About() {
   ];
 
   return (
-    <div className="px-6 md:px-16 py-10 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
+    <div className="px-6 md:px-16 py-10 bg-transparent text-gray-800 dark:text-gray-100 min-h-screen transition-all duration-300 relative">
+      <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-indigo-500/5 dark:bg-indigo-900/10 rounded-full blur-[100px] -z-10 animate-pulse-glow"></div>
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+        <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
           About Me
         </h1>
         <hr className="w-24 mx-auto border-blue-400" />
@@ -77,8 +78,8 @@ function About() {
       </h3>
 
       <div className="overflow-x-auto mb-16">
-        <table className="table-auto w-full max-w-3xl mx-auto border border-blue-300 dark:border-blue-600 shadow-md rounded-lg">
-          <thead className="bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200 font-semibold">
+        <table className="table-auto w-full max-w-3xl mx-auto border border-gray-300/50 dark:border-gray-700/50 shadow-xl rounded-xl overflow-hidden backdrop-blur-sm bg-white/30 dark:bg-[#161b22]/30">
+          <thead className="bg-indigo-500/10 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-400 font-bold uppercase tracking-widest text-sm">
             <tr>
               <th className="px-4 py-2 border border-blue-300 dark:border-blue-600">
                 Sr. No
@@ -94,9 +95,9 @@ function About() {
               </th>
             </tr>
           </thead>
-          <tbody className="text-gray-700 dark:text-gray-100">
-            <tr className="hover:bg-blue-50 dark:hover:bg-blue-700">
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+          <tbody className="text-gray-700 dark:text-gray-200 font-medium">
+            <tr className="hover:bg-indigo-500/5 transition-colors">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 1
               </td>
               <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
@@ -109,31 +110,31 @@ function About() {
                 7.80 CGPA
               </td>
             </tr>
-            <tr className="hover:bg-blue-50 dark:hover:bg-blue-700">
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+            <tr className="hover:bg-indigo-500/5 transition-colors">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 2
               </td>
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 12<sup>th</sup> Science
               </td>
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 2022
               </td>
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 65%
               </td>
             </tr>
-            <tr className="hover:bg-blue-50 dark:hover:bg-blue-700">
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+            <tr className="hover:bg-indigo-500/5 transition-colors">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 3
               </td>
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 10<sup>th</sup>
               </td>
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 2020
               </td>
-              <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
+              <td className="px-4 py-3 border border-gray-200/40 dark:border-gray-700/40">
                 82.8%
               </td>
             </tr>
@@ -144,149 +145,56 @@ function About() {
       <div className="w-full py-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              Internship/Experience
+            <h2 className="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+              Internship / Experience
             </h2>
             <hr className="w-24 mx-auto border-blue-400" />
           </div>
 
-          <div className="relative">
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
-
+          <div className="flex flex-col gap-8">
             {internships.map((internship, idx) => (
-              <div key={idx} className="mb-12 md:mb-16">
-                <div
-                  className={`flex ${
-                    idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } items-stretch gap-6`}
-                >
-                  <div className="hidden md:flex w-full md:w-1/2 justify-center">
-                    <div
-                      className={`flex ${
-                        idx % 2 === 0
-                          ? "justify-end pr-8"
-                          : "justify-start pl-8"
-                      } w-full`}
-                    >
-                      <div className="flex flex-col justify-center items-end text-right gap-2">
-                        <p className="text-sm font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-                          {internship.duration}
-                        </p>
-                        <p className="text-xs text-gray-600 dark:text-gray-400">
-                          {internship.location}
-                        </p>
-                      </div>
+              <div 
+                key={idx} 
+                className="flex flex-col md:flex-row gap-6 p-6 md:p-8 bg-white/60 dark:bg-[#161b22]/60 backdrop-blur-xl rounded-2xl border border-gray-200/50 dark:border-gray-700/50 hover:shadow-lg transition-all duration-300"
+              >
+                 {/* Left side: Date & Company */}
+                 <div className="md:w-1/3 flex flex-col shrink-0 border-b md:border-b-0 md:border-r border-gray-200/50 dark:border-gray-700/50 pb-4 md:pb-0 md:pr-6">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">{internship.company}</h3>
+                    <p className="text-sm font-bold text-indigo-600 dark:text-indigo-400 mb-2 tracking-widest uppercase opacity-90">{internship.duration}</p>
+                    {internship.location && (
+                       <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{internship.location}</p>
+                    )}
+                 </div>
+
+                 {/* Right side: Role & Details */}
+                 <div className="md:w-2/3 flex flex-col">
+                    <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
+                       <h4 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100">{internship.role}</h4>
+                       {internship.isCurrent && (
+                          <span className="px-3 py-1 bg-green-100/80 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-xs font-bold tracking-widest rounded-full uppercase shadow-sm">
+                            Current
+                          </span>
+                       )}
                     </div>
-                  </div>
+                    
+                    {internship.description.length > 0 && (
+                      <ul className="list-disc list-inside leading-relaxed text-gray-600 dark:text-gray-300 mb-6 space-y-2 text-sm md:text-base">
+                        {internship.description.map((item, index) => (
+                           <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
 
-                  <div className="hidden md:flex w-full md:w-0 justify-center">
-                    <div
-                      className={`relative flex items-center justify-center`}
-                    >
-                      <div
-                        className={`
-                        w-5 h-5 rounded-full border-4 z-10 shadow-lg
-                        ${
-                          internship.isCurrent
-                            ? "bg-emerald-500 border-emerald-600 dark:border-emerald-400"
-                            : "bg-blue-500 border-blue-600 dark:border-blue-400"
-                        }
-                      `}
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div className="w-full md:w-1/2">
-                    <div
-                      className={`
-                      ${
-                        internship.isCurrent
-                          ? "bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 border-2 border-emerald-400 dark:border-emerald-500"
-                          : "bg-white dark:bg-gray-800 border border-blue-300 dark:border-blue-700"
-                      }
-                      rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group
-                    `}
-                    >
-                      {internship.isCurrent && (
-                        <div className="absolute top-0 right-0 bg-emerald-500 text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
-                          Current
-                        </div>
-                      )}
-
-                      <div className="md:hidden mb-3 pb-3 border-b border-gray-300 dark:border-gray-600">
-                        <p className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-                          {internship.duration} • {internship.location}
-                        </p>
-                      </div>
-
-                      <h3
-                        className={`text-xl font-bold mb-1 ${
-                          internship.isCurrent
-                            ? "text-emerald-700 dark:text-emerald-300"
-                            : "text-blue-700 dark:text-blue-300"
-                        }`}
-                      >
-                        {internship.role}
-                      </h3>
-
-                      <p
-                        className={`text-sm font-semibold mb-4 ${
-                          internship.isCurrent
-                            ? "text-emerald-600 dark:text-emerald-400"
-                            : "text-blue-600 dark:text-blue-400"
-                        }`}
-                      >
-                        {internship.company}
-                      </p>
-
-                      {internship.description.length > 0 && (
-                        <ul className="space-y-2 mb-4">
-                          {internship.description.map((item, index) => (
-                            <li
-                              key={index}
-                              className="flex gap-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed"
-                            >
-                              <span
-                                className={`flex-shrink-0 w-1.5 h-1.5 rounded-full mt-1.5 ${
-                                  internship.isCurrent
-                                    ? "bg-emerald-500"
-                                    : "bg-blue-500"
-                                }`}
-                              ></span>
-                              <span>{item}</span>
-                            </li>
+                    {internship.technologies && internship.technologies.length > 0 && (
+                       <div className="flex flex-wrap gap-2 mt-auto pt-4 md:pt-0">
+                          {internship.technologies.map((tech, index) => (
+                             <span key={index} className="px-3 py-1.5 bg-gray-100/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-lg shadow-sm border border-gray-200/50 dark:border-gray-700/50">
+                                {tech}
+                             </span>
                           ))}
-                        </ul>
-                      )}
-
-                      {internship.technologies &&
-                        internship.technologies.length > 0 && (
-                          <div className="pt-4 border-t border-gray-300 dark:border-gray-600">
-                            <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wider">
-                              Technologies
-                            </p>
-                            <div className="flex flex-wrap gap-2">
-                              {internship.technologies.map((tech, index) => (
-                                <span
-                                  key={index}
-                                  className={`
-                                  px-3 py-1 text-xs font-medium rounded-full transition-colors
-                                  ${
-                                    internship.isCurrent
-                                      ? "bg-emerald-200 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300"
-                                      : "bg-blue-200 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300"
-                                  }
-                                `}
-                                >
-                                  {tech}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-                    </div>
-                  </div>
-                </div>
+                       </div>
+                    )}
+                 </div>
               </div>
             ))}
           </div>

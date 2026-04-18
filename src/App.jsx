@@ -65,33 +65,33 @@ function App() {
 
   return (
     <div
-      className={`min-h-screen scroll-smooth ${
+      className={`min-h-screen scroll-smooth overflow-x-hidden ${
         darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
       }`}
     >
-      <header className="flex flex-col md:flex-row 2xl:px-20 justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10">
-        <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-          <a href="/">Hardik Gojiya</a>
+      <header className="flex flex-col md:flex-row 2xl:px-20 justify-between items-center p-4 backdrop-blur-md bg-white/70 dark:bg-[#0d1117]/80 border-b border-gray-200/50 dark:border-gray-800/80 shadow-[0_4px_30px_rgba(0,0,0,0.1)] sticky top-0 z-50 transition-colors duration-300">
+        <div className="text-2xl font-black text-indigo-600 dark:text-indigo-400 tracking-tighter hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <a href="/">{"<HardikGojiya />"}</a>
         </div>
 
-        <nav className="flex gap-4 mt-2 md:mt-0 items-center">
-          {["Home", "About", "Skills", "Contact"].map((section) => (
-            <a
-              key={section}
-              href={`#${section}`}
-              className={`font-medium ${
-                activeSection === section
-                  ? "text-indigo-600 underline dark:text-indigo-400"
-                  : "text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400"
-              }`}
-            >
-              {section}
-            </a>
-          ))}
+        <nav className="flex gap-6 mt-4 md:mt-0 items-center">
+           {["Home", "About", "Skills", "Contact"].map((section) => (
+             <a
+               key={section}
+               href={`#${section}`}
+               className={`text-sm font-bold uppercase tracking-wide transition-all duration-300 hover:-translate-y-1 hover:text-indigo-500 hover:shadow-[0_10px_10px_-5px_rgba(16,185,129,0.3)] ${
+                 activeSection === section
+                   ? "text-indigo-600 dark:text-indigo-400 border-b-2 border-indigo-500 pb-1"
+                   : "text-gray-600 dark:text-gray-400"
+               }`}
+             >
+               {section}
+             </a>
+           ))}
 
           <button
             onClick={() => setDarkMode((prev) => !prev)}
-            className="ml-4 px-2 py-1 border border-gray-400 rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="ml-2 w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:scale-110 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300 border border-gray-300 dark:border-gray-700"
           >
             {darkMode ? (
               <FontAwesomeIcon icon={faSun} />

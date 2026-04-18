@@ -14,13 +14,14 @@ import ProjectTemp from "./ProjectTemp";
 
 function Skills() {
   return (
-    <div className="w-full md:px-6 py-10 bg-gray-100 dark:bg-gray-900 text-center text-gray-900 dark:text-gray-100 transition-colors duration-300">
-      <h1 className="text-3xl font-bold text-indigo-600 mb-2" title="Skills">
+    <div className="w-full md:px-6 py-10 bg-transparent text-center text-gray-900 dark:text-gray-100 transition-all duration-300 relative">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/5 dark:bg-indigo-900/10 rounded-full blur-[120px] -z-10 animate-pulse-glow"></div>
+      <h1 className="text-3xl font-bold text-indigo-600 mb-4" title="Skills">
         Skills
       </h1>
       <hr className="w-24 mx-auto border-indigo-400 mb-6" />
 
-      <div className="flex justify-center gap-10 flex-wrap mb-10">
+      <div className="flex justify-center gap-6 flex-wrap mb-12">
         {/* <Skill icon={faHtml5} label="HTML" color="text-red-500" /> */}
         {/* <Skill icon={faCss3Alt} label="CSS" color="text-blue-600" /> */}
         <Skill icon={faJs} label="JavaScript" color="text-yellow-400" />
@@ -34,16 +35,16 @@ function Skills() {
         <Skill icon={faDatabase} label="MongoDB" color="text-green-800" />
       </div>
 
-      <h2 className="text-2xl font-semibold text-indigo-600 mb-2">
+      <h2 className="text-2xl font-semibold text-indigo-600 mb-4">
         Other Skills
       </h2>
       <hr className="w-20 mx-auto border-indigo-300 mb-6" />
-      <div className="flex justify-center gap-10 flex-wrap mb-10">
+      <div className="flex justify-center gap-6 flex-wrap mb-12">
         {/* <Skill icon={faPython} label="Python" color="text-yellow-600" /> */}
         <Skill icon={faGitAlt} label="Git" color="text-orange-500" />
       </div>
 
-      <h1 className="text-3xl font-bold text-indigo-600 mb-2" title="Projects">
+      <h1 className="text-3xl font-bold text-indigo-600 mb-4" title="Projects">
         Projects
       </h1>
       <hr className="w-24 mx-auto border-indigo-400 mb-4" />
@@ -76,11 +77,11 @@ function Skills() {
 function Skill({ icon, label, color }) {
   return (
     <div
-      className="w-24 h-24 flex flex-col items-center justify-center bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-800 dark:text-white rounded-xl shadow-md border border-gray-200 dark:border-gray-600 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+      className="flex items-center gap-4 px-8 py-4 bg-white/60 dark:bg-[#161b22]/60 backdrop-blur-xl rounded-full shadow-sm border border-gray-200/50 dark:border-gray-700/50 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-400/50 transition-all duration-500 group cursor-pointer"
       title={label}
     >
-      <FontAwesomeIcon icon={icon} size="2x" className={`${color} mb-2`} />
-      <span className="text-sm font-semibold tracking-wide">{label}</span>
+      <FontAwesomeIcon icon={icon} size="2x" className={`${color} group-hover:rotate-12 transition-transform duration-500`} />
+      <span className="text-sm font-extrabold tracking-widest uppercase text-gray-800 dark:text-gray-200">{label}</span>
     </div>
   );
 }
