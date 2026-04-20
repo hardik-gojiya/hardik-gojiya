@@ -206,7 +206,7 @@ function ProjectTemp() {
       image: "chatapp-mern.png",
       images: ["chatapp-mern.png"], // Add more real images here later
       github: "https://github.com/hardik-gojiya/chatapp-mern",
-      deployurl: "https://chatapp-mern-ck4w.onrender.com/",
+      deployurl: "",
       tech: [
         "React",
         "Node.js",
