@@ -33,7 +33,7 @@
 <a href="https://github.com/hardik-gojiya"><img src="https://skillicons.dev/icons?i=github" height="45"/></a>
 <a href="https://www.linkedin.com/in/hardik-gojiya-80619a2bb"><img src="https://skillicons.dev/icons?i=linkedin" height="45"/></a>
 <a href="mailto:hardikgojiya143@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="45"/></a>
-<a href="https://hardik-gojiya-portfolio.netlify.app"><img src="https://skillicons.dev/icons?i=netlify" height="45"/></a>
+<a href="https://hardik-gojiya-portfolio.netlify.app"><img src="https://hardik-gojiya-portfolio.netlify.app/my-image.png" height="45"/></a>
 </p>
 
 ---
