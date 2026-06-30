@@ -5,8 +5,8 @@
 ### 🚀 MERN Stack Developer | Node.js Developer | Building Scalable Full-Stack Applications
 
 <p>
-<a href="https://hardik-gojiya-portfolio.netlify.app"><img src="https://img.shields.io/badge/🌐%20Portfolio-Visit-blue?style=for-the-badge"/></a>
-<a href="https://www.linkedin.com/in/hardik-gojiya-80619a2bb"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/></a>
+<a href="https://hardik-gojiya-portfolio.netlify.app" target="_blank"><img src="https://img.shields.io/badge/🌐%20Portfolio-Visit-blue?style=for-the-badge"/></a>
+<a href="https://www.linkedin.com/in/hardik-gojiya-80619a2bb" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/></a>
 
 </p>
 
