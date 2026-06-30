@@ -43,7 +43,7 @@
 ### Languages
 
 <p>
-<img src="https://skillicons.dev/icons?i=js,ts,html,css"/>
+<img src="https://skillicons.dev/icons?i=js,html,css"/>
 </p>
 
 ### Frontend
