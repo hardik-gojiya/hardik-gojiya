@@ -50,7 +50,7 @@
 ### Frontend
 
 <p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,bootstrap,vite"/>
+<img src="https://skillicons.dev/icons?i=react,tailwind"/>
 </p>
 
 ### Backend
@@ -68,14 +68,11 @@
 ### Cloud & APIs
 
 <p>
-<img src="https://skillicons.dev/icons?i=firebase"/>
 <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white"/>
 <img src="https://img.shields.io/badge/JWT-black?style=flat-square"/>
 <img src="https://img.shields.io/badge/Socket.IO-black?style=flat-square&logo=socketdotio"/>
 <img src="https://img.shields.io/badge/Google%20Gemini-AI-blue?style=flat-square"/>
 <img src="https://img.shields.io/badge/RAG-Applications-success?style=flat-square"/>
-<img src="https://img.shields.io/badge/n8n-Automation-EA4B71?style=flat-square"/>
-<img src="https://img.shields.io/badge/HubSpot-API-FF7A59?style=flat-square&logo=hubspot"/>
 </p>
 
 ### Tools
