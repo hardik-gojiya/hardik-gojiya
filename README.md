@@ -6,9 +6,8 @@
 
 <p>
 <a href="https://hardik-gojiya-portfolio.netlify.app"><img src="https://img.shields.io/badge/🌐%20Portfolio-Visit-blue?style=for-the-badge"/></a>
-<a href="https://github.com/hardik-gojiya"><img src="https://img.shields.io/github/followers/hardik-gojiya?style=for-the-badge&logo=github"/></a>
 <a href="https://www.linkedin.com/in/hardik-gojiya-80619a2bb"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/></a>
-<img src="https://komarev.com/ghpvc/?username=hardik-gojiya&style=for-the-badge"/>
+
 </p>
 
 </div>
