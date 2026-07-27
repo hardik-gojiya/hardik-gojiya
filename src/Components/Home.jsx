@@ -64,11 +64,11 @@ function Home() {
       <div className="mb-10 md:mb-0 md:w-1/2 flex justify-center z-10 animate-float">
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-          <img
+          {/* <img
             src="/my-image.png"
             alt="Profile Picture"
             className="relative w-64 h-64 md:w-96 md:h-96 rounded-full object-cover shadow-2xl border border-gray-600/50 bg-[#0d1117] transition-transform duration-500 group-hover:scale-105"
-          />
+          /> */}
         </div>
       </div>
     </div>
