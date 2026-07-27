@@ -40,11 +40,11 @@ function About() {
 
       <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-10">
         <div className="w-full md:w-1/3 flex justify-center">
-          <img
+          {/* <img
             src="/my-image.png"
             alt="Profile"
             className="w-48 h-48 rounded-full object-cover border-4 border-blue-500 shadow-md"
-          />
+          /> */}
         </div>
 
         <div className="w-full md:w-2/3 space-y-3 text-center md:text-left">
