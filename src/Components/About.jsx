@@ -104,10 +104,10 @@ function About() {
                 B.E in Information Technology
               </td>
               <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
-                Expected in 2026
+                April 2026
               </td>
               <td className="px-4 py-2 border border-blue-200 dark:border-blue-600">
-                7.80 CGPA
+                8.12 CGPA
               </td>
             </tr>
             <tr className="hover:bg-indigo-500/5 transition-colors">
