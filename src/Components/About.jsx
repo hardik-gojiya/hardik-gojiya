@@ -6,6 +6,7 @@ function About() {
       duration: "August 2026 - Current",
       location: "Bhavnagar",
       isCurrent: true,
+      isInternship: false,
       description: [
         // "Building and maintaining backend services for AI-powered conversational platform",
         // "Developing scalable APIs using Node.js and Express",
@@ -19,6 +20,7 @@ function About() {
       duration: "Jan 2026 - july 2026",
       location: "Bhavnagar",
       isCurrent: false,
+      isInternship: true,
       description: [
         // "Building and maintaining backend services for AI-powered conversational platform",
         // "Developing scalable APIs using Node.js and Express",
@@ -32,6 +34,7 @@ function About() {
       duration: "May 2024 - July 2024",
       location: "Virtual",
       isCurrent: false,
+      isInternship: true,
       description: [
         "Gained hands-on experience in MERN stack development with real-world project training",
         "Built and optimized full-stack applications focusing on REST APIs, authentication.",
@@ -182,7 +185,21 @@ function About() {
                  {/* Right side: Role & Details */}
                  <div className="md:w-2/3 flex flex-col">
                     <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
-                       <h4 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100">{internship.role}</h4>
+                       <div className="flex flex-wrap items-center gap-2">
+                          <h4 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100">
+                            {internship.role}
+                          </h4>
+                        
+                          <span
+                            className={`px-2 py-1 rounded-full text-xs font-semibold ${
+                              internship.isInternship
+                                ? "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400"
+                                : "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
+                            }`}
+                          >
+                            {internship.isInternship ? "Internship" : "Experience"}
+                          </span>
+                        </div>
                        {internship.isCurrent && (
                           <span className="px-3 py-1 bg-green-100/80 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-xs font-bold tracking-widest rounded-full uppercase shadow-sm">
                             Current
