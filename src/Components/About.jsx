@@ -3,7 +3,7 @@ function About() {
     {
       company: "Floatbot.ai",
       role: "Backend Developer Intern",
-      duration: "Jan 2026 - Present",
+      duration: "August 2026 - Current",
       location: "Bhavnagar",
       isCurrent: true,
       description: [
@@ -11,7 +11,20 @@ function About() {
         // "Developing scalable APIs using Node.js and Express",
         // "Contributing to database optimization and performance improvements",
       ],
-      technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL"],
+      technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL", "Hubspot Apis", "Apollo Apis"],
+    },
+    {
+      company: "Floatbot.ai",
+      role: "Backend Developer Intern",
+      duration: "Jan 2026 - july 2026",
+      location: "Bhavnagar",
+      isCurrent: false,
+      description: [
+        // "Building and maintaining backend services for AI-powered conversational platform",
+        // "Developing scalable APIs using Node.js and Express",
+        // "Contributing to database optimization and performance improvements",
+      ],
+      technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL", "Hubspot Apis", "Apollo Apis"],
     },
     {
       company: "Zidio Development",
