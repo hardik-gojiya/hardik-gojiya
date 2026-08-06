@@ -2,7 +2,7 @@ function About() {
   const internships = [
     {
       company: "Floatbot.ai",
-      role: "Backend Developer Intern",
+      role: "Backend Developer",
       duration: "August 2026 - Current",
       location: "Bhavnagar",
       isCurrent: true,
