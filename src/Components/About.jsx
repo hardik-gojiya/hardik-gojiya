@@ -70,16 +70,16 @@ function About() {
           <p className="text-base leading-relaxed text-gray-800 dark:text-gray-200">
             I’m a passionate and self-motivated{" "}
             <strong className="text-blue-600 dark:text-blue-400">
-              MERN Stack Developer.
+             NodeJS | MERN Stack Developer.
             </strong>{" "}
-            As a fresher, I’ve built several full-stack projects that
+            I’ve built several full-stack projects that
             demonstrate my strong foundation in{" "}
-            <strong>MongoDB, Express.js, React.js, and Node.js</strong>. I enjoy
+            <strong>Node.js, MongoDB, Express.js, React.js </strong>. I enjoy
             crafting clean, user-friendly interfaces and efficient backend
             systems.
           </p>
           <p className="text-base leading-relaxed text-gray-800 dark:text-gray-200">
-            My projects include real-time chat apps, Modern Blogging Platform,
+            My projects include AI Chatbot SaaS Platform, real-time chat apps, Modern Blogging Platform,
             authentication systems, PDF/image tools, and file converters. I’m
             also familiar with <strong>Tailwind CSS</strong>, REST APIs, and
             working with external APIs. I’m a quick learner, team player, and
