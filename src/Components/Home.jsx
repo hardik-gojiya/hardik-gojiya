@@ -23,14 +23,14 @@ function Home() {
         </h1>
 
         <h2 className="text-xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 border-l-4 border-indigo-500 pl-4 py-1">
-          MERN Stack / Node.js Developer
+           Node.js Developer / MERN Stack Developer
         </h2>
 
         <p className="text-md text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed font-light">
           &gt; I’m a passionate web developer skilled in MongoDB, Express, React, and Node.js. 
-          As a fresher, I’m actively building real-world projects to sharpen my skills.
+          I’m actively building real-world projects to sharpen my skills.
           <br/><br/>
-          &gt; Exploring internships or entry-level roles where I can learn, grow, and ship scalable products.
+          {/* &gt; Exploring internships or entry-level roles where I can learn, grow, and ship scalable products. */}
         </p>
 
         <div className="flex justify-center md:justify-start gap-4 pt-4">
