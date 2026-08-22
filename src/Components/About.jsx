@@ -3,7 +3,7 @@ function About() {
     {
       company: "Floatbot.ai",
       role: "Backend Developer",
-      duration: "August 2026 - Current",
+      duration: "January 2026 - Current",
       location: "Bhavnagar",
       isCurrent: true,
       isInternship: false,
@@ -14,20 +14,20 @@ function About() {
       ],
       technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL", "Hubspot Apis", "Apollo Apis"],
     },
-    {
-      company: "Floatbot.ai",
-      role: "Backend Developer Intern",
-      duration: "Jan 2026 - july 2026",
-      location: "Bhavnagar",
-      isCurrent: false,
-      isInternship: true,
-      description: [
-        // "Building and maintaining backend services for AI-powered conversational platform",
-        // "Developing scalable APIs using Node.js and Express",
-        // "Contributing to database optimization and performance improvements",
-      ],
-      technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL", "Hubspot Apis", "Apollo Apis"],
-    },
+    // {
+    //   company: "Floatbot.ai",
+    //   role: "Backend Developer Intern",
+    //   duration: "Jan 2026 - july 2026",
+    //   location: "Bhavnagar",
+    //   isCurrent: false,
+    //   isInternship: true,
+    //   description: [
+    //     // "Building and maintaining backend services for AI-powered conversational platform",
+    //     // "Developing scalable APIs using Node.js and Express",
+    //     // "Contributing to database optimization and performance improvements",
+    //   ],
+    //   technologies: ["Node.js", "Express", "REST APIs", "MongoDB", "SQL", "Hubspot Apis", "Apollo Apis"],
+    // },
     {
       company: "Zidio Development",
       role: "MERN Stack Developer Intern (Virtual)",
