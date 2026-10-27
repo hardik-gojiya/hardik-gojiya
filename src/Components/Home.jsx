@@ -33,7 +33,7 @@ function Home() {
           {/* &gt; Exploring internships or entry-level roles where I can learn, grow, and ship scalable products. */}
         </p>
 
-        <div className="flex justify-center md:justify-start gap-4 pt-4">
+       {/*  <div className="flex justify-center md:justify-start gap-4 pt-4">
           <a
             title="Download Resume"
             href="#"
@@ -51,7 +51,7 @@ function Home() {
           >
             <FontAwesomeIcon icon={faEye} />
           </a>
-        </div>
+        </div> */}
 
         <div className="flex justify-center md:justify-start gap-8 pt-8 border-t border-gray-200 dark:border-gray-800">
           <SocialLink href="https://www.linkedin.com/in/hardik-gojiya-80619a2bb/" icon={faLinkedin} />
