@@ -36,7 +36,7 @@ function Home() {
         <div className="flex justify-center md:justify-start gap-4 pt-4">
           <a
             title="Download Resume"
-            href="Copy-of-Hardik-gojiya-resume.pdf"
+            href="#"
             download="Hardik_Gojiya_Resume"
             className="inline-flex items-center gap-2 px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.5)] rounded-xl font-bold uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1"
           >
@@ -44,7 +44,7 @@ function Home() {
             Resume
           </a>
           <a
-            href="https://drive.google.com/file/d/1a7bW30J8eck1RFhyGsZziKf7D3L4N9aH/view?usp=sharing"
+            href="#
             target="_blank"
             title="See Resume"
             className="inline-flex items-center justify-center w-12 h-12 bg-transparent border-2 border-indigo-600 hover:bg-indigo-600 text-indigo-600 dark:text-indigo-400 hover:text-white dark:hover:text-white hover:shadow-[0_0_20px_rgba(16,185,129,0.5)] rounded-xl transition-all duration-300 transform hover:-translate-y-1"
